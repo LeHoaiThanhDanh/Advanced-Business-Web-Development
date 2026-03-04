@@ -8,6 +8,8 @@ import { Ex13 } from './exercise13/exercise13';
 import { Product } from './exercise19/product/product';
 import { ListProduct } from './exercise19/list-product/list-product';
 import { ServiceProduct } from './exercise19/service-product/service-product';
+import { PaymentComponent } from './momo_payment/payment.component';
+import { PaymentResultComponent } from './payment-result/payment-result.component';
 
 export const routes: Routes = [
   { path: 'ptb1', component: Ptb1 },
@@ -19,5 +21,8 @@ export const routes: Routes = [
   { path: 'Product', component: Product },
   { path: 'ListProduct', component: ListProduct },
   { path: 'ServiceProduct', component: ServiceProduct },
+  { path: 'payment', component: PaymentComponent },
+  { path: 'payment-result', component: PaymentResultComponent },
   { path: '', redirectTo: '/Exercise14', pathMatch: 'full' }
 ];
+
